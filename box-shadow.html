@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        .box{
+            width: 160px;
+            height: 160px;
+            background:lightblue;
+            margin: 20px;
+            float: left;    
+            transition:.4s; /*動畫效果*/
+        }
+        .shadow{
+            box-shadow:10px 10px 10px rgb(26, 75, 116);
+        }
+        .shadow2{
+            box-shadow:-10px -10px 20px 
+            rgb(47, 156, 245);
+        }
+        .shadow3:hover{
+            box-shadow:0px 0px 20px 
+            rgb(132, 0, 255);
+        }
+        .shadow4{
+            box-shadow:-10px -10px 20px 10px 
+            rgb(47, 156, 245); /*濃度加深*/
+        }
+        .shadow5{
+            box-shadow:-10px -10px 20px  inset
+            rgb(47, 156, 245); /*內部陰影*/
+        }
+        .shadow6{
+            box-shadow: 10px 0px 10px red,
+            -10px 0px 10px orange,
+            0px -10px 10px green,
+            0px 10px 10px blue;
+        }
+        .shadow7:hover{
+            box-shadow: 160px 0px 10px red,
+            -160px 0px 10px orange,
+            0px -160px 10px green,
+            0px 160px 10px blue;
+        }
+        .shadow8{
+            background:yellow;
+            border-radius: 50%;
+            box-shadow:0 0 20px #fff,0 0 50px orange inset,0 0 20px 20px orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box shadow"></div>
+    <div class="box shadow2"></div>
+    <div class="box shadow3"></div>
+    <div class="box shadow4"></div>
+    <div class="box shadow5"></div>
+    <div class="box shadow6"></div>
+    <div class="box shadow7"></div>
+    <div class="box shadow8"></div>
+</body>
+</html>

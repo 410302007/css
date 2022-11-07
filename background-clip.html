@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Origin</title>
+    <style>
+        .box{
+            width:200px;
+            height: 200px;
+            padding: 10px;
+            border: 6px dashed #ccc;
+            margin: 16px;
+            float:left;
+            background:url("/example/images/check.jpg");
+        }
+        .border{
+            background-clip: border-box;
+        }
+        .padding{
+            background-clip: padding-box;
+        }
+        .content{
+            background-clip:content-box;
+        }
+        .clear{
+            clear:both;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            background:url("/example/images/check.jpg");
+            color:transparent;
+            -webkit-background-clip:text;
+        }
+    </style>
+</head>
+<body>
+    <div class="box border"></div>
+    <div class="box padding"></div>
+    <div class="box content"></div>
+    <div class="clear"></div>
+    <h1>Hello World!</h1>
+</body>
+</html>
