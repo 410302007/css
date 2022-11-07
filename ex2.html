@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+    <style>
+        body{
+            background:#aaa;
+        }
+        .card{
+            background:#fff;
+            /*padding:10px;*/
+            width: 240px;
+            margin:20px auto;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px #333; 
+            position:relative;
+        }
+        .banner{
+            height: 100px;
+            background:url("/example/images/slide1.jpeg") center center;
+            background-size: cover;
+            border-radius: 10px 10px 0 0 ;
+            overflow: hidden;
+        }
+        .avatar{
+            width: 120px;
+            height: 120px;
+            overflow:hidden;
+            background:#000;
+            border-radius:50%;
+            /*方法一:*/
+            /*margin:-60px auto;*/
+            /*方法二:*/
+            margin : 0;
+            position:absolute;
+            top:40px;
+            left:60px;
+        }
+        .avatar img{
+            width: 100%;
+        }
+        .content{
+            padding-top: 40px;
+            border:20px solid transparent;
+            border-image:url("/example/images/border-image2.png") 20 round;
+        }
+        .card h2{
+            padding-bottom:10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        /*.card h2, .card p{
+            text-align: center;}*/
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="banner">
+
+        </div>
+        <figure class="avatar">
+            <img src="../example/images/dr_strange.jpg" alt="">
+        </figure>
+        <div class="content">
+          <h2>Dr.Strange</h2>
+          <p>Hello, I'm Dr.Strange.</p>
+        </div>
+    </div>
+</body>
+</html>
